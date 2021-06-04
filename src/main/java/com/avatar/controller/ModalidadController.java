@@ -1,9 +1,8 @@
 package com.avatar.controller;
 
-import java.util.HashMap;
+ 
 import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+ 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,13 +21,13 @@ public class ModalidadController {
 	@Autowired
 	private ModalidadService modalidadService;
 
-	@RequestMapping("/verCrudModalidad")
+	@RequestMapping("/PokeDex")
 	public String verInicio() {
-		return "crudModalidad";
+		return "PokeView";
 	}
 
 	@ResponseBody
-	@RequestMapping("/consultaCrudModalidad")
+	@RequestMapping("/consultaPokeDex")
 	public List<Pokemon> listaModalidad(String filtro) {
 		System.out.println("holiwis");
 
